@@ -1,6 +1,6 @@
 # PristineText
 
-This gem uses unicode_utils to lowercase text, removes non-letters, strips and squeezes whitespace, then optionally stemwords (from stemming-tools) to stem every word.
+This gem uses unicode_utils to lowercase text, removes non-letters, strips and squeezes whitespace, then optionally uses stemwords (from libstemming-tools) to stem every word.
 
 ## Installation
 
@@ -20,9 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-require "pristine_text"
+    require "pristine_text"
 
-puts PristineText.clean("haberler geliyorlar gidiyorlar", :tr)
+    puts PristineText.clean("haberler geliyorlar gidiyorlar", :tr)
 
 ## Contributing
 

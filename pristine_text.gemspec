@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Nurettin Onur TUĞCU"]
   spec.email         = ["onurtugcu@gmail.com"]
   spec.summary       = %q{Lowercase, squeeze, stem text.}
-  spec.description   = %q{This gem uses unicode_utils to lowercase text, removes non-letters, strips and squeezes whitespace, then optionally stemwords (from stemming-tools) to stem every word.}
+  spec.description   = %q{This gem uses unicode_utils to lowercase text, removes non-letters, strips and squeezes whitespace, then optionally uses stemwords (from libstemming-tools) to stem every word.}
   spec.homepage      = "https://github.com/nurettin/pristine_text"
   spec.license       = "MIT"
 
