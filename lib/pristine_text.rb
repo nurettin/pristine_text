@@ -1,7 +1,7 @@
 require "pristine_text/version"
 require "open3"
 require "unicode_utils"
-require "cgi"
+require "htmlentities"
 
 module PristineText
   def self.pipe(text, locale)
@@ -24,7 +24,7 @@ module PristineText
   end
 
   def self.clean(text, locale= :en, stem= true)
-    text= UnicodeUtils.downcase(CGI.unescapeHTML(text).gsub(/&nbsp;/, "\n"), locale).
+    text= UnicodeUtils.downcase(HTMLEntities.new.decode(text), locale).
       gsub(/[^\p{Letter}\s]+/, "").
       strip.squeeze
     if stem
