@@ -22,5 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_dependency 'unicode_utils', '>= 0'
   spec.add_dependency 'htmlentities', '>= 0'
-  spec.required_ruby_version= '>= 2'
+  spec.required_ruby_version= '~> 2.1'
 end
