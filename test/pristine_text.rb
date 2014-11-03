@@ -1,4 +1,3 @@
-#encoding: UTF-8
 require "pristine_text"
 require "minitest/autorun"
 
